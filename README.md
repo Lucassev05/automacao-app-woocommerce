@@ -1,0 +1,1 @@
+# automacao-app-woocommerce
