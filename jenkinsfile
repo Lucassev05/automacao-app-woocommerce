@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clonando repositório') {
+            steps {
+               git branch: 'main', url: 'https://github.com/Lucassev05/automacao-app-woocommerce.git'
+            }
+        }
+        stage('Instalando dependências') {
+            steps {
+               sh 'npm install'
+            }
+        }
+        stage('Executando testes') {
+            steps {
+               sh 'npm test'
+            }
+        }
+    }
+}
