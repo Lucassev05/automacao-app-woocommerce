@@ -35,6 +35,7 @@ export const config = {
   ],
   logLevel: "info",
   bail: 0,
+  hostname: "host.docker.internal",
   baseUrl: "http://localhost",
   // port: 4723,
   // path: "/wd/hub",
